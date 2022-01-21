@@ -1,7 +1,7 @@
 const FiveHundred = () => {
   return (
     <div>
-      500error happend
+      500 error happend
     </div>
   )
 }
