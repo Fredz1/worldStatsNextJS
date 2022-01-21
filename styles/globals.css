@@ -1,0 +1,190 @@
+/* 
+  General Styling
+*/
+
+:root{
+  --light: #3badb0;
+  --medium: #95B0B1;
+  --dark: #324B4C;
+  --white: white;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+*
+*:before,
+*:after { 
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image:url(../public/worldMap.svg), linear-gradient(to right top, #3badb0, #59aeb1, #70afb1, #83afb1, #95b0b1); 
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--white);
+}
+
+input{
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  width: 250px;
+  padding: 0.1em;
+  margin: 0.25em;
+  color: var(--white);
+}
+
+input:hover{
+  background-color: var(--medium);
+  border: 1px solid var(--white);
+}
+
+input:focus{
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  width: 250px;
+  padding: 0.1em;
+  margin: 0.25em;
+  color: var(--white);
+}
+
+button{
+  background-color: transparent; 
+  border: 2px solid var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2em 2px;
+  cursor: pointer;
+  border-color: var(--white);
+  color: var(--white);
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+button:hover{
+  box-shadow: 0 0 40px 40px var(--white) inset;
+  color: var(--light);
+}
+
+/* 
+  Component and page styling
+*/
+
+/* 
+  Header
+*/
+
+.header{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+}
+
+/* 
+  Country List
+*/
+
+.countryList{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
+  width: 100vw;
+  height: 25%;
+  margin: auto 0;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* 
+  General Info component
+*/
+
+.generalInfo{
+  text-align: center;
+}
+
+.generalInfo >h2{
+  font-size: 3rem;
+}
+
+.generalInfo > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+  font-size: 1.5em;
+  padding: 1.5;
+}
+
+.generalInfo > div > div{
+  padding: 0.25em 0.5em;
+  display: grid;
+  justify-items: stretch;
+  border: 1px solid var(--white);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+  Job Info component
+*/
+
+.jobinfo{
+  padding: 1em;
+}
+
+.jobSelect{
+  font-size: 2em;
+  text-align: center;
+  margin: 2em;
+}
+
+/* 
+  Job Salary Component
+*/
+.jobSalary{
+  padding: 0em 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  font-size: 2em;
+  gap: 10px;
+}
+
+.jobSalary > div{
+  padding: 0.25em 0.5em;
+  display: grid;
+  justify-items: center;
+  border: 1px solid var(--white);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+  Error Page
+*/
+
+.errorPage{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
+  width: 100vw;
+  height: 25%;
+  margin: auto 0;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
